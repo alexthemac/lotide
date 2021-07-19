@@ -8,6 +8,7 @@ const assertEqual = function(actual, expected) {
   }
 };
 
+//lotide version of head
 const head = function(array) {
   let first = array[0];
   return first;
