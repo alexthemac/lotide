@@ -12,7 +12,7 @@ const assertEqual = function(actual, expected) {
 const head = function(array) {
   let first = array[0];
   return first;
-}
+};
 
 // TEST CODE
 assertEqual(head(["a",1,2,3]), "a");
