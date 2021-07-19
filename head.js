@@ -8,10 +8,15 @@ const assertEqual = function(actual, expected) {
   }
 };
 
+const head = function(array) {
+  let first = array[0];
+  return first;
+}
+
 // TEST CODE
-assertEqual("Lighthouse Labs", "Bootcamp");
-assertEqual(1, 1);
-assertEqual("text", "text");
-assertEqual("text1", "text");
-assertEqual(42, 42);
-assertEqual(0, -1);
+assertEqual(head(["a",1,2,3]), "a");
+assertEqual(head([0,1,2,3]), 3);
+assertEqual(head([5,6,7]), 5);
+assertEqual(head(["Hello", "Lighthouse", "Labs"]), "Hello");
+assertEqual(head([1]), 1);
+assertEqual(head([]), "Hello");
