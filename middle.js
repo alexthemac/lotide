@@ -46,4 +46,4 @@ assertArraysEqual(middle([1,2]),[1]);// => FAILED
 assertArraysEqual(middle([]),[4]);// => FAILED
 assertArraysEqual(middle([1,2,3,4,5]),[2]);// => FAILED
 assertArraysEqual(middle([1,2,3,4,5,6,7,8,10,4,3,1,2]),[5]);// => FAILED
-assertArraysEqual(middle(["hello","test1","test2"]),["hello"]);// => PASSED
+assertArraysEqual(middle(["hello","test1","test2"]),["hello"]);// => FAILED
