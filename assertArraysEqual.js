@@ -1,3 +1,4 @@
+//Compares two arrays. Returns true if match, false if not match.
 let eqArrays = function(arr1, arr2) {
   let match = true;
   if (arr1.length !== arr2.length) {
@@ -11,6 +12,7 @@ let eqArrays = function(arr1, arr2) {
   return match;
 };
 
+//Console logs whether two arrays are equal.
 let assertArraysEqual = function(arr1, arr2) {
   if (eqArrays(arr1, arr2)) {
     console.log(`💸💸💸Assertion Passed: ${arr1} === ${arr2}`);
