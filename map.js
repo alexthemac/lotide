@@ -38,7 +38,7 @@ const words2 = ['alex', 'is', 'the', 'best'];
 const callback = word => word[0];
 
 //Tests
-assertArraysEqual(map(['alex', 'is', 'the', 'best'], word => word[0]),['a', 'i', 't', 'b']);
-assertArraysEqual(map(words2, word => word[0]),['a', 'i', 't', 'b']);
-assertArraysEqual(map(words2, callback),['a', 'i', 't', 'b']);
+// assertArraysEqual(map(['alex', 'is', 'the', 'best'], word => word[0]),['a', 'i', 't', 'b']);
+// assertArraysEqual(map(words2, word => word[0]),['a', 'i', 't', 'b']);
+// assertArraysEqual(map(words2, callback),['a', 'i', 't', 'b']);
 
