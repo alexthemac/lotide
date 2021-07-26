@@ -1,16 +1,18 @@
 //Compares two arrays. Returns true if match, false if not match.
-let eqArrays = function(arr1, arr2) {
-  let match = true;
-  if (arr1.length !== arr2.length) {
-    match = false;
-  }
-  for (let i = 0; i < arr1.length; i++) {
-    if (arr1[i] !== arr2[i]) {
-      match = false;
-    }
-  }
-  return match;
-};
+// let eqArrays = function(arr1, arr2) {
+//   let match = true;
+//   if (arr1.length !== arr2.length) {
+//     match = false;
+//   }
+//   for (let i = 0; i < arr1.length; i++) {
+//     if (arr1[i] !== arr2[i]) {
+//       match = false;
+//     }
+//   }
+//   return match;
+// };
+
+const eqArrays = require("./eqArrays");
 
 //Console logs whether two arrays are equal.
 let assertArraysEqual = function(arr1, arr2) {
@@ -21,7 +23,4 @@ let assertArraysEqual = function(arr1, arr2) {
   }
 };
 
-//Tests
-assertArraysEqual(["1",2,3],["1",2,3]);
-assertArraysEqual([1,2,3],[1,2,3]);
-assertArraysEqual(["1",2,3],[2,3]);
+module.exports = assertArraysEqual;
