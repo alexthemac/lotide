@@ -1,11 +1,11 @@
 //Checks if the actual and expected arguements are equal.
-const assertEqual = function(actual, expected) {
-  if (actual === expected) {
-    console.log(`💸💸💸Assertion Passed: ${actual} === ${expected}`);
-  } else {
-    console.log(`❌❌❌Assertion Failed: ${actual} !== ${expected}`);
-  }
-};
+// const assertEqual = function(actual, expected) {
+//   if (actual === expected) {
+//     console.log(`💸💸💸Assertion Passed: ${actual} === ${expected}`);
+//   } else {
+//     console.log(`❌❌❌Assertion Failed: ${actual} !== ${expected}`);
+//   }
+// };
 
 
 
@@ -22,13 +22,14 @@ const countLetters = function(sentence) {
       }
     }
   }
-  console.log(results);
   return results;
 };
 
-//Test Code
-countLetters("lighthouse in the house");
-countLetters("      aAaa    AAA");
+module.exports = countLetters;
 
-assertEqual(countLetters("      aAaa    AAA")['a'], 3); // PASS
-assertEqual(countLetters("      aAaa    AAA")['A'], 3); // FAIL
+//Test Code
+// countLetters("lighthouse in the house");
+// countLetters("      aAaa    AAA");
+
+// assertEqual(countLetters("      aAaa    AAA")['a'], 3); // PASS
+// assertEqual(countLetters("      aAaa    AAA")['A'], 3); // FAIL
